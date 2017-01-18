@@ -8,7 +8,7 @@ function Ball()
 	this.velocity = 0;
 
 	this.show = function() {
-		fill(64,224,208);
+		fill(51,255,51);
 		ellipse(this.x,this.y,30,30);
 	}
 
