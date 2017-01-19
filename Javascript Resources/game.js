@@ -3,9 +3,20 @@ var obstacles = [];
 var hitFlag;
 var score = 0;
 var endGameFlag = 0;
+var hsFlag = 0;
+var highScore;
+if(localStorage.getItem("highScore"))
+{
+	highScore = localStorage.getItem("highScore");
+}
+else
+{
+	highScore = 0;
+}
 
 function setup()
 {
+	console.log(highScore);
 	createCanvas(400,600);
 	ball = new Ball();
 	obstacles.push(null);
@@ -33,6 +44,12 @@ function draw()
 					if(score != 0 && !endGameFlag)
 					{		
 						score -=1;
+						if(score > highScore)
+						{
+							highScore = score;
+							hsFlag = 1;
+							localStorage.setItem("highScore", highScore);
+						}
 						endGameFlag = 1
 					}
 					for(var j=0; j<obstacles.length; j++)	
@@ -43,7 +60,16 @@ function draw()
 					rect(100,250,200,100,20);
 					fill(255);
 					textSize(20);
-					text("GAME OVER!!!", 130, 305);
+					if(!hsFlag)
+					{
+						text("GAME OVER!!!", 130, 300);
+						text("Score : "+score, 130,320);
+					}
+					else
+					{
+						text("GAME OVER!!!", 130, 300);
+						text("New High Score : "+highScore, 110, 320);
+					}
 				}
 		}
 	}
@@ -71,6 +97,11 @@ function keyTyped()
 	if(key === 'i')
 	{
 		console.log(obstacles.length);
+	}
+
+	if(key === 'r')
+	{
+		localStorage.clear();
 	}
 }
 
