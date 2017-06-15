@@ -57,7 +57,7 @@ function draw()
 						obstacles[j].stop();
 					}
 					fill(153,76,0);
-					rect(100,250,200,100,20);
+					rect(75,250,250,100,20);
 					fill(255);
 					textSize(20);
 					if(!hsFlag)
