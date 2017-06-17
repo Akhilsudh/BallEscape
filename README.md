@@ -1,4 +1,6 @@
 # Ball-Escape
+![Platform](https://img.shields.io/badge/platform-web%20platform-orange.svg) [![License](https://img.shields.io/badge/license-MIT%20license-blue.svg)](LICENSE) 
+
 A flappy bird clone written in Javascript. This game uses new features provided by HTML5 and drawing features provided by the p5.js library
 ## Screenshots
 ![Gameplay](Screenshots/Gameplay.png)  ![Game Over](Screenshots/GameOver.png) ![High Score](Screenshots/HighScore.png)
