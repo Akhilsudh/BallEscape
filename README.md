@@ -2,8 +2,7 @@
 ![Platform](https://img.shields.io/badge/platform-web%20platform-orange.svg) [![License](https://img.shields.io/badge/license-MIT%20license-blue.svg)](LICENSE) 
 
 A flappy bird clone written in Javascript. This game uses new features provided by HTML5 and drawing features provided by the p5.js library
-## Screenshots
-![Gameplay](Screenshots/Gameplay.png)  ![Game Over](Screenshots/GameOver.png) ![High Score](Screenshots/HighScore.png)
+
 ## Requirements
 Any HTML5 supporting web-browser (Preferably firefox web-browser).
 
@@ -12,6 +11,10 @@ Just clone this repo and run the main.html file in the repo. This can be done by
 
     git clone https://github.com/Akhilsudh/BallEscape.git
     firefox main.html
+
+## Screenshots
+![Gameplay](Screenshots/Gameplay.png)  ![Game Over](Screenshots/GameOver.png) ![High Score](Screenshots/HighScore.png)
+
 ## License 
 
     MIT License
