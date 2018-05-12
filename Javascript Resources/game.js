@@ -105,6 +105,14 @@ function keyTyped()
 	}
 }
 
+function mouseClicked()
+{
+	if(!hitFlag)
+	{	
+		ball.kick();
+	}
+}
+
 function scoreDisp()
 {
 	fill(153,76,0);
