@@ -4,7 +4,7 @@
 A flappy bird clone written in Javascript. This game uses new features provided by HTML5 and drawing features provided by the p5.js library
 
 ## Requirements
-Any HTML5 supporting web-browser (Preferably firefox web-browser).
+Any HTML5 supporting web-browser (Preferably firefox web-browser) and a keyboard.
 
 ## Instructions
 Just clone this repo and run the main.html file in the repo. This can be done by exectuting the following commands:
